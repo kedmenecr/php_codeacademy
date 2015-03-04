@@ -1,0 +1,16 @@
+7/7
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+      <p>
+        <?php
+      function aboutMe($name , $age){
+          echo "hello! My name is " .$name .         " and I am " . $age . " years old." ;
+          }
+          aboutMe("Roberto", 18);
+        ?>
+      </p>
+    </body>
+</html>
