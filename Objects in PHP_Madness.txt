@@ -1,0 +1,49 @@
+6/10
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Reconstructing the Person Class</title>
+      <link type='text/css' rel='stylesheet' href='style.css'/>
+	</head>
+	<body>
+      <p>
+      <?php
+    
+       //first we create a class 
+        class Person { 
+        //adding PUBLIC  properties
+        public $isAlive = true ;             
+        public $firstname;
+        public $lastname;
+        public $age;
+        //ADDING A CONSTRUCT(OR) 
+        
+        public function __construct($firstname,$lastname,$age){
+            $this->firstname = $firstname;
+            $this->lastname = $lastname;
+            $this->age = $age ;
+                        }
+            //Adding a method
+            
+            public function greet() {
+                return  "Hello, my name is " . $this->firstname                 . " " . $this->lastname . ". Nice to meet you!                 :-)" ;
+                 }
+            
+            }
+           
+              
+        //adding instances of the class
+         $teacher = new Person("boring",12345,12345);
+         $student = new Person("bok",18,25); 
+        
+        //printing values
+        echo $teacher->isAlive;
+        echo $student->age;
+        
+        //calling functions
+        $teacher -> greet();
+        $student -> greet();
+        ?> 
+      </p>
+    </body>
+</html>

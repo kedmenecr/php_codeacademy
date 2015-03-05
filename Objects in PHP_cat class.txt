@@ -1,0 +1,35 @@
+9/10
+<!DOCTYPE html>
+<html>
+    <head>
+	  <title> Challenge Time! </title>
+      <link type='text/css' rel='stylesheet' href='style.css'/>
+	</head>
+	<body>
+      <p>
+        <?php
+          // Your code here,first a class
+          class Cat{
+              //publics
+              public $isAlive = true;
+              public $numLegs = 4;
+              public $name;
+                //constructors
+                    public function __construct($name){
+                  $this->name;
+                    }
+                    //creating a fucntion method
+                    public function meow(){
+                        return "Meow meow";
+                        }
+                  
+              
+              }
+              
+              $cat1 = new Cat("CodeCat");
+              echo $cat1->meow();
+              
+        ?>
+      </p>
+    </body>
+</html>
